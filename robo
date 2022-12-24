@@ -1,7 +1,11 @@
 #include <Keypad.h>
+#include <Servo.h>
 
+// Using a 4x4 keypad
 const byte ROWS = 4; 
 const byte COLS = 4; 
+
+int pos = 0;    // variable to store the servo motor 1 position
 
 char hexaKeys[ROWS][COLS] = {
   {'1', '2', '3', 'A'},
@@ -10,19 +14,39 @@ char hexaKeys[ROWS][COLS] = {
   {'*', '0', '#', 'D'}
 };
 
-byte rowPins[ROWS] = {9, 8, 7, 6}; 
-byte colPins[COLS] = {5, 4, 3, 2}; 
+# Pine setup on my Wavgat board
+byte rowPins[ROWS] = {13, 12, 11, 10}; 
+byte colPins[COLS] = {9, 8, 7, 6}; 
 
+// create keypad object for keypad
 Keypad customKeypad = Keypad(makeKeymap(hexaKeys), rowPins, colPins, ROWS, COLS); 
+
+// create servo object to control a servo
+Servo myservo1;
+Servo myservo2;
 
 void setup(){
   Serial.begin(9600);
+  myservo1.attach(A0);
+  myservo2.attach(A1);
 }
   
 void loop(){
   char customKey = customKeypad.getKey();
-  
   if (customKey){
     Serial.println(customKey);
-  }
+    }
+  //if (customKey ==1 ){  
+    //for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
+    // in steps of 1 degree
+    //myservo1.write(pos); 
+    //myservo2.write(180-pos);// tell servo to go to position in variable 'pos'
+   // delay(5);                       // waits 5ms for the servo to reach the position
+  //}
+  //for (pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
+   // myservo1.write(pos);
+   // myservo2.write(180-pos); // tell servo to go to position in variable 'pos'
+   // delay(5);                       // waits 5ms for the servo to reach the position
+  //}
+  //}
 }
