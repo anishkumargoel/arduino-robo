@@ -1,0 +1,28 @@
+PLEASE NOTE: I shop around to get the best deals and so should you. The links below are only to provide detailed product information.
+
+(1) Arduino Uno R3 (https://robu.in/product/arduino-uno-r3/): This the the primary development board and is the most expensive component. 
+For the Beginners, genuine Made in Italy, board is recommended. This is beacuse it supports all the libraries and does not require additional drivers.
+Advanced users can go for the Made in China, CH340 version. This requires additional drivers to be installed which are widely available over the internet.
+
+(2) Servo Motors (https://robu.in/product/towerpro-sg90-9gm-1-2kg-180-degree-rotation-servo-motor-good-quality/)- There are light performance motors which can be powered off the Arduino board.
+They have a very low stall torque and will not work for higher loads.
+
+(3) Assorted LEDS (https://robu.in/product/10mm-dip-led-blue-10-pcs/): A mixture of LEDs can be used depending on iser preferences
+
+(4) 220 ohm resistors (https://robu.in/product/220-ohm-0-25w-metal-film-resistor/): These are the most common resistors to be added in series circuit with all kinds of LEDs
+
+(5) Buzzer (https://robu.in/product/5v-passive-buzzer/): This is required to build the buzzer circuit
+
+
+(6)100 ohm resistor (https://robu.in/product/0-25w-100-ohm-resistor-pack-of-100/): This is required to be in series with the buzzer
+
+(7)Assorted Jumper cables (https://robu.in/product/20cm-dupont-wire-color-jumper-cable-2-54mm-1p-1p-female-female-40pcs/): The three different DuPont types are
+male-to male, male-to-femaile and female to female. DuPont connector Jumper wires are recommended for beginners as they eliminate a lot of soldering work. 
+Later on, you can just use busted hone charging cables and custom make your cables
+
+(8) Soldering Equipment or a nearby mobile repair shop: Theoretically, you can complete the entire setup using jumper wires/ breadboard.
+However, for components such as resistors it is cheaper to solder them directly on to LEDS. Ig you do not have prior soldering experience, you can go to the neighborhood
+mobile repair shop. Those guys work on much nimbler electronics and will be able to solder your circuits from the blueprint. 
+
+(9) Heat shrink sleeve (https://robu.in/product/heat-shrink-sleeve-1mm-red-5meter-industrial-grade-woer-hst/): Electrical tape cab be used to insulate solders and
+other connections. However, it tends to gets sticky. Heat shrink sleeve is a more elegant solution and can be easily heated with a hair dryer.
